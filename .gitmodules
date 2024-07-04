@@ -1,0 +1,8 @@
+[submodule "TMIO"]
+	path = TMIO
+	url = https://github.com/tuda-parallel/TMIO
+	branch = main
+[submodule "FTIO"]
+	path = FTIO
+	url = https://github.com/tuda-parallel/FTIO
+	branch = main
