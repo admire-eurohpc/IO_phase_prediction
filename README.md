@@ -1,25 +1,29 @@
 # FTIO and TMIO for Predicting the Period of I/O Phases
-This repository contains [FTIO](https://github.com/tuda-parallel/FTIO) and [TMIO](https://github.com/tuda-parallel/TMIO). This repo deploys both tools using submodules. For installation instructions see [installation](#installation). The official repo of both tools are located at: 
+This repository contains [FTIO](https://github.com/tuda-parallel/FTIO) and [TMIO](https://github.com/tuda-parallel/TMIO). This repo deploys both tools using submodules. For installation instructions see [installation](#installation). The official repos of both tools are located at: 
 - FTIO: https://github.com/tuda-parallel/FTIO
 - TMIO: https://github.com/tuda-parallel/TMIO
+
+To create Extra-P models using the extension developed in the ADMIRE project, see [Extra-P in ADMIRE](#extra-p-in-admire).
 
 ## Table of Content
 - [FTIO and TMIO for Predicting the Period of I/O Phases](#ftio-and-tmio-for-predicting-the-period-of-io-phases)
 	- [Table of Content](#table-of-content)
-	- [Overview](#overview)
+	- [Overview of the Tools in this Repo](#overview-of-the-tools-in-this-repo)
 		- [FTIO](#ftio)
 		- [TMIO](#tmio)
 	- [Installation](#installation)
 	- [Quick Start](#quick-start)
+	- [Extra-P in ADMIRE](#extra-p-in-admire)
 	- [Contributing](#contributing)
 	- [License](#license)
 	- [Contact and Authors](#contact-and-authors)
 	- [Acknowledgments](#acknowledgments)
 	- [Citation](#citation)
 	- [Publications](#publications)
-  
-## Overview 
-Below, both tools are briefly described. 
+
+## Overview of the Tools in this Repo
+Below, FTIO and TMIO are briefly described.
+
 ### FTIO
 ![GitHub Release](https://img.shields.io/github/v/release/tuda-parallel/FTIO)
 ![GitHub Release Date](https://img.shields.io/github/release-date/tuda-parallel/FTIO)
@@ -85,6 +89,12 @@ git submodule update --recursive --remote
 For usage of the tools see:
 - [FTIO usage instructions](https://github.com/tuda-parallel/FTIO?tab=readme-ov-file#usage).
 - [TMIO usage instructions](https://github.com/tuda-parallel/TMIO/?tab=readme-ov-file#usage)
+
+<br><br>
+
+
+## Extra-P in ADMIRE
+During the project, [Extra-P](https://github.com/extra-p/extrap) has been extended to model I/O. This is documented [here](https://github.com/extra-p/extrap/blob/master/docs/modeling-io-performance.md). Furthermore, the metric proxy ([official GitHub](https://github.com/besnardjb/proxy_v2) or [ADMIRE GitHub](https://github.com/admire-eurohpc/metric_proxy)) internally calls Extra-P to generate performance models from the captured Profiles. For that, simply go to `http://localhost:1337/model.html` after running the proxy as described [here](https://github.com/besnardjb/proxy_v2). For more info, run the proxy and see `http://localhost:1337/doc.html`.
 
 <br><br>
 
